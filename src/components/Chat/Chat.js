@@ -15,7 +15,6 @@ let socket;
 const Chat = ({ location }) => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
-  const [users, setUsers] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
 
@@ -39,9 +38,6 @@ const Chat = ({ location }) => {
       setMessages((messages) => [...messages, message]);
     });
 
-    socket.on("roomData", ({ users }) => {
-      setUsers(users);
-    });
   }, []);
 
   const sendMessage = (event) => {

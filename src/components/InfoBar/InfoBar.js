@@ -5,15 +5,15 @@ import "./InfoBar.css";
 import closeIcon from "../Icon/closeIcon.png";
 import onlineIcon from "../Icon/onlineIcon.png";
 
-function InfoBar({ room, user }) {
+function InfoBar({ room }) {
     return (
       <div className="infoBar">
         <div className="leftInfobarContainer">
-          <img src={onlineIcon} alt="Online Icon" className="onlineIcon" />
+          <img src={onlineIcon} alt="Online" className="onlineIcon" />
           <h3>Room { room }</h3>
         </div>
         <div className="rightInfobarContainer">
-                <a href="/"><img src={closeIcon} alt="Close Image" /></a>
+          <a href="/"><img src={closeIcon} alt="Close" /></a>
         </div>
       </div>
     );
