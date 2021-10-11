@@ -13,7 +13,7 @@ function InfoBar({ room }) {
                 <h3>Room {room}</h3>
             </div>
             <div className="rightInfobarContainer">
-                <a href="https://smartgen-web.netlify.app/homepage">
+                <a href="https://smartgen-web.netlify.app">
                     <img src={closeIcon} alt="Close" />
                 </a>
             </div>
